@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AndroidSQLite</string>
+    <string name="writesomething">Write something</string>
+    <string name="sendtodbbutton">Send to database</string>
+    <string name="clearDB">Clear DataBase</string>
+</resources>
