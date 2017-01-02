@@ -61,6 +61,7 @@ public class NoteDAO {
         );
     }
 
+
     // usunięcie notatki z bazy
     public void deleteAll() {
         dbHelper.getWritableDatabase().delete(Notes.TABLE_NAME, null, null);
