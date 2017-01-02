@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
     // dodaje nową notatkę do bazy danych i odświeża listę
     public void addNewNote(View view) {
         Note note = new Note();
