@@ -50,8 +50,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // czyści db
-    public void clearDB() {
+    public void clearDB(View view) {
         noteDAO.deleteAll();
+        reloadNotesList();
     }
 
 
