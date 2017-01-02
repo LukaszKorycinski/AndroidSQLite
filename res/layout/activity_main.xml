@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kalkulator.lukasz.androidsqlite.MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="@string/writesomething"
+        android:id="@+id/editText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonSendNote" />
+
+    <Button
+        android:id="@+id/ButtonSendNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sendtodbbutton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="addNewNote"
+        android:layout_marginTop="165dp"
+        app:layout_constraintBottom_toTopOf="@+id/listView"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginBottom="153dp" />
+
+    <Button
+        android:id="@+id/buttonclearDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clearDB"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonSendNote"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="clearDB"/>
+
+</android.support.constraint.ConstraintLayout>
